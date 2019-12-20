@@ -25,6 +25,9 @@ var vm1 = new Vue({
   }
 });
 
+vm1.newProp = 'New!';
+console.log(vm1);
+
 setTimeout(function() {
 	vm1.title = 'Changed by timer';
 }, 3000);
@@ -41,5 +44,6 @@ var vm2 = new Vue({
     }
   }
 })
+
 
 
