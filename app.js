@@ -3,6 +3,10 @@ var data = {
   showParagraph: false
 }
 
+Vue.component('hello', {
+	template: '<h1>Hello!</h1>'
+});
+
 var vm1 = new Vue({
 
   data: data,
@@ -56,8 +60,6 @@ var vm3 = new Vue({
 
 vm3.$mount();
 document.getElementById('app3').appendChild(vm3.$el);
-
-
 
 
 
